@@ -4,7 +4,7 @@ def oxford_comma(array)
   if array.length == 1
     return array[0]
   elsif array.length == 2
-    array.join(" and ")
+    return array.join(" and ")
   else
     array.each do |item|
       if item == array[-1]
@@ -13,4 +13,6 @@ def oxford_comma(array)
         string << item + ", "
       end
   end
+  
+  string
 end
